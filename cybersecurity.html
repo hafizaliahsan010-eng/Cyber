@@ -1,0 +1,2695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cybersecurity</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+    }
+    .nav-link:hover{
+         /* types: button; */
+         color: white;
+         background-color: blue;
+    }
+    .btn-info:hover{
+        background-color: greenyellow;
+    }
+    .btn-primary:hover{
+      background-color: greenyellow;
+    }
+    
+    li.dropdown-item:hover{
+        background-color: blue;
+    }
+    a.active{
+      background-color: blue;
+    }
+ 
+.wrap{
+  position: relative;
+}
+.pc{
+  display: block;
+  width: 100%;
+  height: auto;
+}    
+.overlaydone{
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 40%;
+  height: 0;
+  transition: .5s ease;
+}
+@media screen and (min-width: 1024px){
+   .overlaydone{
+    width: 47%;
+   }
+}
+@media screen and (min-width: 1280px){
+   .overlaydone{
+    width: 39%;
+   }
+}
+.wrap:hover .overlaydone{
+  height: 100%;
+}
+.wrap1{
+  position: relative;
+}
+.pc1{
+  display: block;
+  width: 100%;
+  height: auto;
+}    
+.overlaydone1{
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 40%;
+  height: 0;
+  transition: .5s ease;
+}
+.wrap1:hover .overlaydone1{
+  height: 100%;
+}
+.wrap2{
+  position: relative;
+}
+.pc2{
+  display: block;
+  width: 100%;
+  height: auto;
+}    
+.overlaydone2{
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 40%;
+  height: 0;
+  transition: .5s ease;
+}
+.wrap2:hover .overlaydone2{
+  height: 100%;
+}
+.wrap3{
+  position: relative;
+}
+.pc3{
+  display: block;
+  width: 100%;
+  height: auto;
+}    
+.overlaydone3{
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 40%;
+  height: 0;
+  transition: .5s ease;
+}
+.wrap3:hover .overlaydone3{
+  height: 100%;
+}
+.ali {
+  position: relative;
+  width: 50%;
+  /* margin-left: 100px; */
+}
+
+.heading {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 70%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.ali:hover .overlay {
+  height: 100%;
+  /* opacity: 0.3; */
+}
+
+.text {
+  white-space: nowrap; 
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.ali1 {
+  position: relative;
+  width: 50%;
+  /* margin-left: 100px; */
+}
+
+.heading1 {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 70%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.ali1:hover .overlay1 {
+  height: 100%;
+  /* opacity: 0.7; */
+}
+
+.text1 {
+  white-space: nowrap; 
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.ali2 {
+  position: relative;
+  width: 50%;
+  /* margin-left: 100px; */
+}
+
+.heading2 {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 70%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.ali2:hover .overlay2 {
+  height: 100%;
+  /* opacity: 0.7; */
+}
+
+.text2 {
+  white-space: nowrap; 
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.ali3 {
+  position: relative;
+  width: 50%;
+  /* margin-left: 100px; */
+}
+
+.heading3 {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 70%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.ali3:hover .overlay3 {
+  height: 100%;
+  /* opacity: 0.7; */
+}
+
+.text3 {
+  white-space: nowrap; 
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+@media screen and (min-width: 980px){
+    .ali1{
+      margin-left: 200px;
+    }
+}
+@media screen and (min-width: 780px){
+    .ali1{
+      margin-left: 100px;
+    }
+}
+@media screen and (min-width: 980px){
+    .ali2{
+      margin-left: 400px;
+    }
+}
+@media screen and (min-width: 780px){
+    .ali2{
+      margin-left: 200px;
+    }
+}
+@media screen and (min-width: 980px){
+    .ali3{
+      margin-left: 600px;
+    }
+}
+@media screen and (min-width: 780px){
+    .ali3{
+      margin-left: 300px;
+    }
+}
+@media screen and (min-width: 350px){
+    .air{
+      margin-left: 50px;
+    }
+}
+@media screen and (min-width: 412px){
+    .air{
+      margin-left: 92px;
+    }
+}
+
+@media screen and (min-width: 540px){
+    .air{
+      margin-left: 140px;
+    }
+}
+
+@media screen and (min-width: 300px){
+    .air{
+      margin-left: 40px;
+    }
+}
+@media screen and (min-width: 750px){
+    .air{
+      margin-left: 20px;
+    }
+}
+@media screen and (min-width: 900px){
+    .air{
+      margin-left: 0;
+    }
+}
+@media screen and (min-width: 800px){
+    .air{
+      margin-left: 0;
+    }
+}
+@media screen and (min-width: 800px){
+    .air3{
+      margin-left: 0;
+    }
+}
+.air3{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.air4{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.air5{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.air6{
+  display: block;
+  position: relative;
+  text-align: center;
+  text-decoration: underline;
+}
+@media screen and (min-width: 340px){
+  .overlay{
+    width: 205%;
+  }
+  .overlay1{
+    width: 205%;
+  }
+  .overlay2{
+    width: 200%;
+  }
+  .overlay3{
+    width: 205%;
+  }
+}
+@media screen and (min-width: 768px){
+  .overlay{
+    width: 100%;
+  }
+  .overlay1{
+    width: 110%;
+  }
+  .overlay2{
+    width: 100%;
+  }
+  .overlay3{
+    width: 110%;
+  }
+}
+@media screen and (min-width: 1024px){
+  .overlay{
+    width: 80%;
+  }
+  .overlay1{
+    width: 85%;
+  }
+  .overlay2{
+    width: 80%;
+  }
+  .overlay3{
+    width: 85%;
+  }
+}
+@media screen and (min-width: 912px){
+  .overlay{
+    width: 84%;
+  }
+  .overlay1{
+    width: 94%;
+  }
+  .overlay2{
+    width: 83%;
+  }
+  .overlay3{
+    width: 93%;
+  }
+}
+@media screen and (min-width: 540px){
+  .overlay{
+    width: 155%;
+  }
+  .overlay1{
+    width: 159%;
+  }
+  .overlay2{
+    width: 155%;
+  }
+  .overlay3{
+    width: 159%;
+  }
+}
+@media screen and (min-width: 853px){
+  .overlay{
+    width: 92%;
+  }
+  .overlay1{
+    width: 102%;
+  }
+  .overlay2{
+    width: 92%;
+  }
+  .overlay3{
+    width: 102%;
+  }
+}
+@media screen and (min-width: 1280px){
+  .overlay{
+    width: 80%;
+  }
+  .overlay1{
+    width: 80%;
+  }
+  .overlay2{
+    width: 80%;
+  }
+  .overlay3{
+    width: 80%;
+  }
+  .ali1{
+    margin-left: 200px ;
+  }
+  .ali2{
+    margin-left: 400px ;
+  }
+  .ali3{
+    margin-left: 600px ;
+  }
+}
+.para{
+   font-size: 41px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   text-align: center;  
+}
+@media screen and (max-width: 340px){
+  .para{
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 360px){
+  .para{
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 440px){
+  .para{
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 540px){
+  .para{
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 340px){
+  .carousel-item{
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 440px){
+  .carousel-item{
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 440px){
+  .carousel-item{
+    font-size: 22px;
+  }
+}
+/* .pic{
+  margin-top: -640px;
+  margin-left: 0;
+  border: 2px solid white;
+  border-radius: 50%;  
+}
+.pic1{
+  border-radius: 5%;
+  margin: 0;
+}
+@media screen and (min-width: 390px){
+  .pic1{
+    margin-left: 10px;
+  }
+  .pic{
+    margin-left: 100px;
+  }
+}
+@media screen and (min-width: 340px){
+  .pic1{
+    margin-left: 10px;
+  }
+  .pic{
+    margin-left: 90px;
+  }
+  .secure{
+    margin-right: 30px;
+  }
+  .plat{
+    margin-right: 30px;
+  }
+}
+@media screen and (min-width: 853px){
+  .pic1{
+    margin-left: 0;
+  }
+  .pic{
+    margin-right: 100px;
+  }
+  .secure{
+    margin-right: 50px;
+  }
+  .plat{
+    margin-right: 50px;
+  }
+}
+@media screen and (min-width: 375px){
+  .pic1{
+    margin-left: 20px;
+  }
+  .pic{
+    margin-left: 100px;
+  }
+  .secure{
+    margin-right: 50px;
+  }
+  .plat{
+    margin-right: 50px;
+  }
+}
+@media screen and (min-width: 412px){
+  .pic1{
+    margin-left: 40px;
+  }
+  .pic{
+    margin-left: 120px;
+  }
+  .secure{
+    margin-right: 50px;
+  }
+  .plat{
+    margin-right: 50px;
+  }
+}
+@media screen and (min-width: 430px){
+  .pic1{
+    margin-left: 50px;
+  }
+  .pic{
+    margin-left: 130px;
+  }
+  .secure{
+    margin-left: 60px;
+  }
+}
+@media screen and (min-width: 360px){
+  .pic1{
+    margin-left: 20px;
+  }
+  .pic{
+    margin-left: 100px;
+  }
+  .secure{
+    margin-right: 40px;
+  }
+  .plat{
+    margin-right: 40px;
+  }
+}
+@media screen and (min-width: 1024px){
+  
+  .pic{
+    margin-left: 94px;
+  }
+  .secure{
+    margin-right: 0;
+  }
+  .plat{
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 540px){
+  .pic1{
+    margin-left: 100px;
+  }
+  .pic{
+    margin-left: 170px;
+  }
+  .secure{
+    margin-right: 50px;
+  }
+  .plat{
+    margin-right: 50px;
+    justify-content:left;
+  }
+}
+.secure{
+  margin-top: -200px;
+  margin-left: 40px;
+  text-align: center;
+}
+.plat{
+  text-align: center;
+  margin-left: 40px;
+}
+.pic2{
+  border-radius: 5%;
+} */
+/* .root1{
+  margin-top: -600px;
+  margin-left: 75px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+.root{
+  border-radius: 5%;
+}
+.root2{
+  border-radius: 5%;
+}
+
+@media screen and (max-width: 344px){
+  .root{
+   width: 370px;
+   height: 420px;
+  }
+  .root1{
+    margin-left: 80px;
+  }
+  .root2{
+   width: 370px;
+   height: 420px;
+  }
+  .root3{
+    width: 450px;
+  }
+  .root4{
+    width: 450px;
+  }
+  .root5{
+   width: 370px;
+   height: 420px;
+  }
+}
+@media screen and (max-width: 1024px){
+  .root{
+   width: 430px;
+  }
+  .root1{
+    margin-left:120px ;
+  }
+  .root2{
+   width: 430px;
+  }
+  .root3{
+    width: 430px;
+  }
+  .root4{
+    width: 430px;
+    margin-left: 40px;
+  }
+  .root5{
+   width: 430px;
+  }
+  .root6{
+    margin-left: 40px;
+  }
+  .root7{
+    margin-left: 40px;
+  }
+} */
+/* @media screen and (max-width: 768px){
+  .root{
+   width: 430px;
+  }
+  .root1{
+    margin-left:120px ;
+  }
+  .root2{
+   width: 430px;
+  }
+  .root3{
+    width: 430px;
+    left: 40px;
+  }
+  .root4{
+    width: 430px;
+    left: 40px;
+  }
+  .root5{
+   width: 430px;
+  }
+  
+}
+@media screen and (max-width: 375px){
+  .root{
+   width: 450px;
+   height: 420px;
+   margin-left: 30px;
+  }
+  .root1{
+    margin-left: 110px;
+  }
+  .root2{
+   width: 450px;
+   height: 420px;
+   margin-left: 30px;
+  }
+  .root3{
+    width: 450px;
+  }
+  .root4{
+    width: 450px;
+  }
+  .root5{
+   width: 450px;
+   height: 420px;
+   margin-left: 30px;
+  }
+  .root6{
+   margin-left: 40px;
+  }
+  .root7{
+    margin-left: 40px;
+  }
+}
+@media screen and (min-width: 412px){
+  .root{
+   width: 430px;
+   margin-left: 40px;
+  }
+  .root1{
+    margin-left:120px ;
+  }
+  .root2{
+   width: 430px;
+   margin-left: 40px;
+  }
+  .root3{
+    width: 430px;
+    margin-left: 40px;
+  }
+  .root4{
+    width: 430px;
+    margin-left: 40px;
+  }
+  .root5{
+   width: 430px;
+   margin-left: 40px;
+  }
+  .root6{
+    margin-left: 50px;
+  }
+  .root7{
+    margin-left: 40px;
+  }
+}
+@media screen and (max-width: 390px){
+  .root{
+   width: 430px;
+   margin-left: 40px;
+  }
+  .root1{
+    margin-left:120px ;
+  }
+  .root2{
+   width: 240px;
+  }
+  .root3{
+    width: 240px;
+  }
+  .root4{
+    width: 430px;
+    margin-left: 40px;
+  }
+  .root5{
+   width: 430px;
+   margin-left: 0;
+  }
+  .root6{
+    margin-left: 60px;
+  }
+  .root7{
+    margin-left: 40px;
+  }
+}
+@media screen and (min-width: 430px){
+  .root{
+   width: 430px;
+   margin-left: 40px;
+  }
+  .root1{
+    margin-left:120px ;
+  }
+  .root2{
+   width: 430px;
+   margin-left: 40px;
+  }
+  .root3{
+    width: 430px;
+    margin-left: 40px;
+  }
+  .root4{
+    width: 430px;
+    margin-left: 40px;
+  }
+  .root5{
+   width: 430px;
+   margin-left: 40px;
+  }
+  .root6{
+    margin-left: 50px;
+  }
+  .root7{
+    margin-left: 40px;
+  }
+}
+@media screen and (min-width: 540px){
+  .root{
+   width: 340px;
+   height: 410px;
+  }
+  .root2{
+   width: 340px;
+   height: 410px;
+  }
+  .root3{
+    width: 340px;
+  }
+  .root4{
+    width: 340px;
+  }
+  .root5{
+   width: 340px;
+   height: 410px;
+  }
+}
+@media screen and (min-width: 340px){
+  .root{
+   width: 300px;
+  }
+  .root2{
+   width: 300px;
+  }
+  .root5{
+   width: 300px;
+  }
+} */
+ .one{
+  border-radius: 5%;
+ }
+ .two{
+  border-radius: 5%;
+ }
+ .five{
+  border-radius: 5%;
+ }
+ .rop{
+  border-radius: 4%;
+ }
+ @media screen and (max-width: 375px){
+  .rop{
+    width: 350px;
+    height: 450px;
+  }
+ }
+ @media screen and (max-width: 360px){
+  .rop{
+    width: 330px;
+    height: 450px;
+  }
+ }
+ @media screen and (min-width: 412px){
+  .rop{
+    width: 370px;
+    height: 450px;
+  }
+ }
+ @media screen and (max-width: 390px){
+  .rop{
+    width: 360px;
+    height: 450px;
+  }
+ }
+ @media screen and (min-width: 768px){
+  .rop{
+    width: 550px;
+    height: 650px;
+  }
+ }
+ @media screen and (min-width: 820px){
+  .rop{
+    width: 650px;
+    height: 750px;
+  }
+ }
+ @media screen and (min-width: 540px){
+  .rop{
+    width: 480px;
+    height: 550px;
+  }
+ }
+ @media screen and (min-width: 344px){
+  .rop{
+    width: 320px;
+    height: 450px;
+  }
+ }
+ @media screen and (min-width: 853px){
+  .rop{
+    width: 550px;
+    height: 650px;
+  }
+ }
+ @media screen and (min-width: 1280px){
+  .rop{
+    width: 750px;
+    height: 750px;
+    border-radius: 3%;
+  }
+ }
+ 
+ .smith{
+      background: #f5f5f5;
+      padding: 10px 16px;
+      margin-top: 15px;
+      border-radius: 8px;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .smith1 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .icon {
+      display: flex;
+      align-items: center;
+    }
+
+    .dropdown-content {
+      margin-top: 10px;
+      display: none;
+      font-size: 14px;
+      color: #444;
+    }
+
+    .dropdown-content.active {
+      display: block;
+    }
+    .smith2{
+      background: #f5f5f5;
+      margin-top: 15px;
+      padding: 10px 16px;
+      border-radius: 8px;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .smith3 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .icon1 {
+      display: flex;
+      align-items: center;
+    }
+
+    .dropdown-content1 {
+      margin-top: 10px;
+      display: none;
+      font-size: 14px;
+      color: #444;
+    }
+
+    .dropdown-content1.active {
+      display: block;
+    }
+    .smith4{
+      background: #f5f5f5;
+      margin-top: 15px;
+      padding: 10px 16px;
+      border-radius: 8px;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .smith5 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .icon2 {
+      display: flex;
+      align-items: center;
+    }
+
+    .dropdown-content2 {
+      margin-top: 10px;
+      display: none;
+      font-size: 14px;
+      color: #444;
+    }
+
+    .dropdown-content2.active {
+      display: block;
+    }
+    .smith6{
+      background: #f5f5f5;
+      margin-top: 15px;
+      padding: 10px 16px;
+      border-radius: 8px;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .smith7 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .icon3 {
+      display: flex;
+      align-items: center;
+    }
+
+    .dropdown-content3 {
+      margin-top: 10px;
+      display: none;
+      font-size: 14px;
+      color: #444;
+    }
+
+    .dropdown-content3.active {
+      display: block;
+    }
+
+    a.read:hover{
+      color: black;
+    }
+
+    a.read1:hover{
+      color: black;
+    }
+
+    a.foot:hover{
+      color: greenyellow;
+    }
+    .dark-mode {
+      background-color: #121212;
+      color:burlywood;
+    }
+    .toggle-btn{
+      position: sticky;
+      top: 100px;
+      z-index: 10;
+    }
+    .myimage{
+        animation: move 3s ease-in-out infinite;
+      }
+      @keyframes move {
+        0%{transform: translateY(0);}
+        50%{transform: translateY(-15px);}
+        100%{transform: translateY(0);}
+      }
+      .logo-container{
+        overflow: hidden;
+        white-space: nowrap;
+        background-color: rgb(77, 77, 168);
+        width: 100%;
+        padding: 50px 0;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      }
+      .logo-strip{
+        display: inline-block;
+        animation: scrollLeft 60s linear infinite;
+      }
+      .logo-strip img{
+        height: 60px;
+        margin: 0 80px;
+        vertical-align: middle;
+      }
+      @keyframes scrollLeft {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+      }
+
+
+    
+    
+  
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm w-100" style="background-image: url('https://templates.hibotheme.com/aixio/default/assets/img/hero/hero-bg-2.jpg'); 
+background-position:top; background-repeat: no-repeat; background-size:auto; position: sticky; top: 0; z-index: 5;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="blue" class="bi bi-airplane mb-2" viewBox="0 0 16 16">
+  <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849m.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1s-.458.158-.678.599"/>
+</svg>&nbsp;&nbsp;<span style="font-size: 28px;"><b>ISI</b></span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNav" aria-controls="navbarNav"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item mx-3">
+            <div class="dropdown">
+                <a class="nav-link rounded-pill active dropdown-toggle text-light" data-bs-toggle="dropdown" href="#"><b>Home</b></a>
+              <ul class="dropdown-menu">
+               <li class="dropdown-item"><a href="" class="text-dark text-decoration-none">Home- AIsaaS platform</a></li>   
+               <li class="dropdown-item"><a href="" class="text-dark text-decoration-none">Home- AI cyber security <br>solutions</a></li>   
+               <li class="dropdown-item"><a href="" class="text-dark text-decoration-none">Home- AI automations</a></li>     
+            </ul>
+        </div>
+        </li>
+        <li class="nav-item mx-3">
+        <div class="dropdown">
+            <a class="nav-link rounded-pill dropdown-toggle"data-bs-toggle="dropdown" href=""><b>Pages</b></a>
+            <ul class="dropdown-menu">
+                <li class="dropdown-item"><a href="#about" class="text-dark text-decoration-none">About</a></li>
+                <li class="dropdown-item"><a href="#service" class="text-dark text-decoration-none">Services</a></li>
+                <li class="dropdown-item"><a href="#about" class="text-dark text-decoration-none">Carriers</a></li>
+                <li class="dropdown-item"><a href="#about" class="text-dark text-decoration-none">Team</a></li>
+                <li class="dropdown-item"><a href="#about" class="text-dark text-decoration-none">Testimonials</a></li>
+                <li class="dropdown-item"><a href="#about" class="text-dark text-decoration-none">Pricing plan</a></li>
+                <li class="dropdown-item"><a href="#about" class="text-dark text-decoration-none">FAQ</a></li>
+                <li class="dropdown-item"><a href="#about" class="text-dark text-decoration-none">Terms & Conditions</a></li>
+                <li class="dropdown-item"><a href="#about" class="text-dark text-decoration-none">Privacy Policy</a></li>
+            </ul>
+
+        </div>
+        </li>
+          <li class="nav-item mx-3">
+            <div class="dropdown">
+            <a href="" class="nav-link rounded-pill dropdown-toggle" data-bs-toggle="dropdown"><b>Projects</b></a>
+            <ul class="dropdown-menu">
+                <li class="dropdown-item"><a href="" class="text-dark text-decoration-none">Projects</a></li>
+                <li class="dropdown-item"><a href="" class="text-dark text-decoration-none">Projects single</a></li>
+            </ul>
+            </div>        
+        </li>
+          <li class="nav-item mx-3">
+            <div class="dropdown">
+            <a class="nav-link rounded-pill dropdown-toggle" data-bs-toggle="dropdown" href=""><b>Shop</b></a>
+            <ul class="dropdown-menu">
+                <li class="dropdown-item"><a href="" class="text-dark text-decoration-none">Shop left sidebar</a></li>
+                <li class="dropdown-item"><a href="" class="text-dark text-decoration-none">Shop right sidebar</a></li>
+                <li class="dropdown-item"><a href="" class="text-dark text-decoration-none">Shop Grid</a></li>
+                <li class="dropdown-item"><a href="" class="text-dark text-decoration-none">Product single</a></li>
+                <li class="dropdown-item"><a href="" class="text-dark text-decoration-none">Cart</a></li>
+                <li class="dropdown-item"><a href="" class="text-dark text-decoration-none">Wishlist</a></li>
+                <li class="dropdown-item"><a href="" class="text-dark text-decoration-none">Checkout</a></li>
+                <li class="dropdown-item"><a href="" class="text-dark text-decoration-none">Login</a></li>
+                <li class="dropdown-item"><a href="" class="text-dark text-decoration-none">Register</a></li>
+            </ul>
+        </div>
+        </li>
+          <li class="nav-item mx-3">
+            <div class="dropdown">
+            <a class="nav-link rounded-pill dropdown-toggle" data-bs-toggle="dropdown" href=""><b>Blog</b></a>
+           <ul class="dropdown-menu">
+            <li class="dropdown-item"><a href="" class="text-dark text-decoration-none">Blog Layout</a></li>
+            <li class="dropdown-item"><a href="" class="text-dark text-decoration-none">Blog single Layout</a></li>
+            <li class="dropdown-item"><a href="" class="text-dark text-decoration-none">Others</a></li>
+           </ul>
+        </div>
+        </li>
+          <li class="nav-item mx-3">
+            <div class="dropdown">
+            <a class="nav-link rounded-pill dropdown-toggle" data-bs-toggle="dropdown" href=""><b>Contact</b></a>
+        </div>
+        </li>
+        <!-- <li class="nav-item mx-4"><a href="" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-search mt-1" viewBox="0 0 16 16">
+  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+</svg></a></li>
+        <li class="nav-item">
+            <a href=""><button class="btn btn-info rounded-pill" type="button">
+  Get in touch<span class="badge"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+  <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+</svg></span></button></a>
+        </li> -->
+        </ul>
+      </div>
+    </div>
+
+  </nav>
+
+    <button class="toggle-btn" onclick="DarkMode()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
+  <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"/>
+</svg></button>
+    <script>
+
+      function DarkMode() {
+    document.body.classList.toggle("dark-mode");
+  }
+    </script>
+<div class="container-fluid overflow-hidden">
+    <div class="row d-flex flex-wrap align-items-center justify-content-center">
+     <div class="col-xl-5 col-lg-5 col-md12 col-sm-12"> 
+    
+<button type="button" class="btn rounded-pill" style="background-color: greenyellow;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M8 0a4 4 0 0 1 4 4v2.05a2.5 2.5 0 0 1 2 2.45v5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5v-5a2.5 2.5 0 0 1 2-2.45V4a4 4 0 0 1 4-4M4.5 7A1.5 1.5 0 0 0 3 8.5v5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5v-5A1.5 1.5 0 0 0 11.5 7zM8 1a3 3 0 0 0-3 3v2h6V4a3 3 0 0 0-3-3"/>
+</svg>&nbsp;&nbsp;<b>Smarter Security, Powered By AI</b></button>
+   <h1 style="font-size: 60px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">AI- Powered <br><span class="text-info"><b>CyberSecurity</b> <br></span>For A Safer Digital <br>World</h1>
+<p>Protect your business with real-time threat detection,<br>analytics, and autonomous defense systems
+</p>
+     </div>
+
+<div class="col-xl-7 col-lg-7 col-md-12 col-sm-12">
+<img src="https://templates.hibotheme.com/aixio/default/assets/img/hero/hero-img-2.png" alt="" height="600px" width="700px">
+</div> 
+
+</div><!--row-->
+</div><!--container---->
+
+<!--about-->
+<section class="py-5" id="about">
+  <div class="container">
+  <div class="row">
+ <div class="col-xl-3 col-lg-2 col-md-5 col-sm-12">
+<p>We are a cyber-security-first <br>company,using AI innovation <br>tohelp business detect threats.</p>
+<a href=""><button class="btn btn-info rounded-pill" type="button">
+  Learn More<span class="badge"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+  <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+</svg></span></button></a>
+ </div><!--col-->
+ <div class="col-xl-5 col-lg-6 col-md-7 col-sm-12">
+ <img src="https://templates.hibotheme.com/aixio/default/assets/img/about/about-img-2.jpg" alt="" class="h-100 w-100 rounded">
+ </div><!--col-->
+ <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+ <button type="button" class="btn btn-info rounded-pill"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M8 0a4 4 0 0 1 4 4v2.05a2.5 2.5 0 0 1 2 2.45v5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5v-5a2.5 2.5 0 0 1 2-2.45V4a4 4 0 0 1 4-4M4.5 7A1.5 1.5 0 0 0 3 8.5v5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5v-5A1.5 1.5 0 0 0 11.5 7zM8 1a3 3 0 0 0-3 3v2h6V4a3 3 0 0 0-3-3"/>
+</svg>&nbsp;&nbsp;About us</button>
+<p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 40px;">Protecting What <br>Matters Most <br>Through Cutting <br>Edge 
+Intelligence <br>Ethical Cyber</p>
+ </div><!--col-->
+  </div><!--row-->
+  </div><!--container-->
+</section>
+
+<!--services-->
+<section class="py-5 overflow-hidden" id="service">
+<div class="container-fluid bg-dark rounded-4 w-100">
+<div class="col flex-column">
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 w-100 py-5 mx-auto" style="max-width: 300px;">
+<button type="button" class="btn rounded-pill" style="background-color: greenyellow;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M8 0a4 4 0 0 1 4 4v2.05a2.5 2.5 0 0 1 2 2.45v5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5v-5a2.5 2.5 0 0 1 2-2.45V4a4 4 0 0 1 4-4M4.5 7A1.5 1.5 0 0 0 3 8.5v5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5v-5A1.5 1.5 0 0 0 11.5 7zM8 1a3 3 0 0 0-3 3v2h6V4a3 3 0 0 0-3-3"/>
+</svg>&nbsp;&nbsp;<b>Aixio AI CyberSecurity Services</b></button>
+</div>
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 w-100 mx-auto" style="max-width: 800px;">
+  <p style="font-size: 40px; color: white; text-align: center; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Ai-powered Threat Detection For Real Time Attack Prevention Response</p>
+</div>
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 w-100">
+<div class="ali d-flex">
+<h1 class="heading">
+  <span class="blur-text text-secondary" style="font-size: 100px;">01</span><span class="text-light" style="font-size: 30px;white-space: nowrap; 
+  position: absolute; margin-top: 24px;">AI-power Threat <br>Detection</span></h1>
+  <div class="overlay rounded">
+    <div class="text"><span class="text-light" style="font-size: 30px;">AI-power Threat <br>Detection</span></div>
+  </div>
+</div>
+</div>
+
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 w-100">
+<div class="ali1 d-flex">
+<h1 class="heading1">
+  <span class="blur-text text-secondary" style="font-size: 100px;">02</span><span class="text-light" style="font-size: 30px;white-space: nowrap; 
+  position: absolute; margin-top: 24px;">Auto Incident <br>Response</span></h1>
+  <div class="overlay1 rounded">
+    <div class="text1"><span class="text-light" style="font-size: 30px;">Auto Incident <br>Response</span></div>
+  </div>
+</div>
+</div>
+
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 w-100">
+<div class="ali2 d-flex">
+<h1 class="heading2">
+  <span class="blur-text text-secondary" style="font-size: 100px;">03</span><span class="text-light" style="font-size: 30px;white-space: nowrap; 
+  position: absolute; margin-top: 24px;">Cloud Security & <br>Monitoring</span></h1>
+  <div class="overlay2 rounded">
+    <div class="text2"><span class="text-light" style="font-size: 30px;">Cloud Security & <br>Monitoring</span></div>
+  </div>
+</div>
+</div>
+
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 w-100">
+<div class="ali3 d-flex">
+<h1 class="heading3">
+  <span class="blur-text text-secondary" style="font-size: 100px;">04</span><span class="text-light" style="font-size: 30px;white-space: nowrap; 
+  position: absolute; margin-top: 24px;">Behave Analyze, <br>Anomoly Detect</span></h1>
+  <div class="overlay3 rounded">
+    <div class="text3"><span class="text-light" style="font-size: 30px;">Behave Analyze, <br>Anomoly Detect</span></div>
+  </div>
+</div>
+</div>
+
+</div><!--col-->
+</div><!--container-->
+</section>
+
+<!--customer-->
+ <div id="demo" class="carousel slide mx-auto" style="max-width: 700px;" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner mt-5">
+    <div class="carousel-item active">
+      <p class="d-block w-100 h-100" style="font-size: 35px; background-color: gray; color: white; padding: 10px; text-align: start;">“We’ve used several cybersecurity platforms, but none match Aixio’s AI precision and speed. Their automated response prevented a major data breach, and the compliance tools made our audits effortless.” <br><img src="https://templates.hibotheme.com/aixio/default/assets/img/clients/client-1.jpg" alt="" class="air3"> <span style="text-align: center;">- Micheal Reyes</span></p>
+    </div>
+    <div class="carousel-item">
+       <p class="d-block w-100 h-100" style="font-size: 35px; background-color: gray; color: white; padding: 10px; text-align: start;">“Aixio’s AI precision and speed we’ve used several cybersecurity platforms, but none match but none match . Their automated response prevented a major data breach, and the compliance tools made our audits effortless.” <br><img src="https://templates.hibotheme.com/aixio/default/assets/img/clients/client-2.jpg" alt="" class="air4"> <span style="text-align: center;">- Tony Conor</span></p>
+    </div>
+    <div class="carousel-item">
+      <p class="d-block w-100 h-100" style="font-size: 35px; background-color: gray; color: white; padding: 10px; text-align:start;">“Awesome AI service from Aixio platforms, but none match Aixio’s AI precision and speed. Their automated response prevented a major data breach, and the compliance tools made our audits effortless.” <br><img src="https://templates.hibotheme.com/aixio/default/assets/img/clients/client-3.jpg" alt="" class="air5"> <span style="text-align: center;">- Andrew Higins</span></p> 
+    </div>
+  </div>
+
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+<br><br><br><br>
+
+<!-- data security -->
+<br><br><br><br>
+<section class="py-5" style="background-color: lightgray;">
+<div class="container">
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mx-auto" style="display: block; max-width: 200px;">
+<button type="button" class="btn rounded-pill" style="background-color: greenyellow;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M8 0a4 4 0 0 1 4 4v2.05a2.5 2.5 0 0 1 2 2.45v5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5v-5a2.5 2.5 0 0 1 2-2.45V4a4 4 0 0 1 4-4M4.5 7A1.5 1.5 0 0 0 3 8.5v5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5v-5A1.5 1.5 0 0 0 11.5 7zM8 1a3 3 0 0 0-3 3v2h6V4a3 3 0 0 0-3-3"/>
+</svg>&nbsp;&nbsp;<b>Data Security</b></button>
+</div><!--frist div-->
+
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mx-auto" style="display: block; max-width: 700px; text-align: center;">
+<p style="font-size: 44px;"><b>Secure Your Data With Zero Trust Architecture And Controls</b></p>
+</div><!--second div-->
+<div class="row">
+  <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+  <img src="https://templates.hibotheme.com/aixio/default/assets/img/about/ai-logo.png" alt="" class="mt-4" style="position: absolute; margin-left: 5%; border: 2px solid white; border-radius: 50%;">
+  <img class="one" src="https://templates.hibotheme.com/aixio/default/assets/img/about/data-bg.jpg" alt="" height="390px" width="270px">
+</div><!--third div-->
+
+<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+  <img class="two" src="https://templates.hibotheme.com/aixio/default/assets/img/about/ai-img-1.jpg" alt="" height="390px" width="270px">
+</div><!--fourth div-->
+
+<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+<div class="col">
+
+  <div class="three" style="background-color: #008CBA; height: 185px; width: 270px; border-radius: 5%;">
+ <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white" class="bi bi-shield-lock bg-secondary mb-3 mx-3 p-2 rounded-circle" style="border: dashed;" viewBox="0 0 16 16">
+  <path d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56"/>
+  <path d="M9.5 6.5a1.5 1.5 0 0 1-1 1.415l.385 1.99a.5.5 0 0 1-.491.595h-.788a.5.5 0 0 1-.49-.595l.384-1.99a1.5 1.5 0 1 1 2-1.415"/>
+</svg>
+<span style="color: white; font-size: 40px;"><b>100%</b></span>  
+<h3 class="mx-3" style="color: white;">Security Guard</h3>
+<p class="mx-3" style="color: antiquewhite;">AI encryption keeps your data safe</p> 
+  </div>
+
+ <div class="four" style="height: 185px; width: 270px; border-radius: 5%; background-color: white; margin-top: 20px;">
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="blue" class="bi bi-shield-lock bg-light mb-3 mx-3 p-2 rounded-circle" style="border: dashed;" viewBox="0 0 16 16">
+  <path d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56"/>
+  <path d="M9.5 6.5a1.5 1.5 0 0 1-1 1.415l.385 1.99a.5.5 0 0 1-.491.595h-.788a.5.5 0 0 1-.49-.595l.384-1.99a1.5 1.5 0 1 1 2-1.415"/>
+</svg>
+<span style="color: black; font-size: 40px;"><b>24/7</b></span>  
+<h4 class="mx-3" style="color: black;">Real-Time monitoring</h4>
+<p class="mx-3" style="color: gray;">Track activity and get security analytics 24/7</p> 
+ </div> 
+</div><!--col-->
+
+</div><!--fifth div-->
+
+<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+  <img class="five" src="https://templates.hibotheme.com/aixio/default/assets/img/about/data-card-bg-2.jpg" alt="" height="390px" width="270px">
+</div><!--sixth div-->
+</div><!--row-->
+
+<div class="mt-3" style="text-align: center;">
+  <h2><b>AI For Absolute Security</b></h2>
+  <p style="font-size: 25px;">Our platform uses advanced encryption protocols to ensure your sensitive.</p>
+</div>
+</div><!--container-->
+</section>
+
+<!--brand section-->
+<section class="py-5">
+<div class="logo-container">
+  <div class="logo-strip">
+    <img src="https://templates.hibotheme.com/aixio/default/assets/img/brand/brand-7.svg" alt="" id="ahsan">
+    <img src="https://templates.hibotheme.com/aixio/default/assets/img/brand/brand-8.svg" alt="" id="ahsan">
+    <img src="https://templates.hibotheme.com/aixio/default/assets/img/brand/brand-1.svg" alt="" id="ahsan">
+    <img src="https://templates.hibotheme.com/aixio/default/assets/img/brand/brand-3.svg" alt="" id="ahsan">
+    <img src="https://templates.hibotheme.com/aixio/default/assets/img/brand/brand-4.svg" alt="" id="ahsan">
+    <img src="https://templates.hibotheme.com/aixio/default/assets/img/brand/brand-2.svg" alt="" id="ahsan">
+    <img src="https://templates.hibotheme.com/aixio/default/assets/img/brand/brand-5.svg" alt="" id="ahsan">
+    <img src="https://templates.hibotheme.com/aixio/default/assets/img/brand/brand-6.svg" alt="" id="ahsan">
+
+    <img src="https://templates.hibotheme.com/aixio/default/assets/img/brand/brand-7.svg" alt="" id="ahsan">
+    <img src="https://templates.hibotheme.com/aixio/default/assets/img/brand/brand-8.svg" alt="" id="ahsan">
+    <img src="https://templates.hibotheme.com/aixio/default/assets/img/brand/brand-1.svg" alt="" id="ahsan">
+    <img src="https://templates.hibotheme.com/aixio/default/assets/img/brand/brand-3.svg" alt="" id="ahsan">
+    <img src="https://templates.hibotheme.com/aixio/default/assets/img/brand/brand-4.svg" alt="" id="ahsan">
+    <img src="https://templates.hibotheme.com/aixio/default/assets/img/brand/brand-2.svg" alt="" id="ahsan">
+    <img src="https://templates.hibotheme.com/aixio/default/assets/img/brand/brand-5.svg" alt="" id="ahsan">
+    <img src="https://templates.hibotheme.com/aixio/default/assets/img/brand/brand-6.svg" alt="" id="ahsan">
+  </div>
+</div><!--container-->
+</section>
+
+
+<section class="py-5 bg-info rounded-4">
+<div class="container">
+<div class="row d-flex flex-wrap">
+<div class="col">
+
+  <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12">
+  <div>  
+<button type="button" class="btn rounded-pill" style="background-color: greenyellow;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M8 0a4 4 0 0 1 4 4v2.05a2.5 2.5 0 0 1 2 2.45v5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5v-5a2.5 2.5 0 0 1 2-2.45V4a4 4 0 0 1 4-4M4.5 7A1.5 1.5 0 0 0 3 8.5v5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5v-5A1.5 1.5 0 0 0 11.5 7zM8 1a3 3 0 0 0-3 3v2h6V4a3 3 0 0 0-3-3"/>
+</svg>&nbsp;&nbsp;<b>Why Choose Aixio</b></button>
+  </div>
+  </div><!--first-->
+  
+  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+  <div>
+  <p style="color: white; font-size: 44px;">Trusted by many for scalable, automated cyber defence</p>
+  </div>
+  </div><!--second-->
+
+  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+  <div>
+   <p style="color: white;">We believe cybersecurity should be smart, seamless and scalable. Our AL-powered platform continuosly analyze data.</p> 
+  </div>
+  </div><!--third-->
+
+  <div class="row">
+  <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1">
+  <div>
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="pink" class="bi bi-shield-lock bg-primary mt-3 p-2 rounded-circle" style="border: dashed;" viewBox="0 0 16 16">
+  <path d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56"/>
+  <path d="M9.5 6.5a1.5 1.5 0 0 1-1 1.415l.385 1.99a.5.5 0 0 1-.491.595h-.788a.5.5 0 0 1-.49-.595l.384-1.99a1.5 1.5 0 1 1 2-1.415"/>
+</svg>
+  </div>
+  </div>
+  <div class="col-xl-5 col-lg-5 col-md-3 col-sm-3">
+  <div class="mx-2 mt-3">
+   <h6 style="color: white;">Scalable across Environments</h6> 
+  </div>
+  </div>
+  <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1">
+    <div>
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="pink" class="bi bi-people bg-primary mt-3 p-2 rounded-circle" style="border: dashed;" viewBox="0 0 16 16">
+  <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
+</svg>
+    </div>
+  </div>
+  <div class="col-xl-5 col-lg-5 col-md-3 col-sm-3">
+    <div class="mx-2 mt-3">
+      <h6 style="color: white;">Best compilance support</h6>
+    </div>
+  </div>
+  </div><!--inner row-->
+  <div class="row">
+  <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1">
+  <div>
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="pink" class="bi bi-wallet bg-primary mt-3 p-2 rounded-circle" style="border: dashed;" viewBox="0 0 16 16">
+  <path d="M0 3a2 2 0 0 1 2-2h13.5a.5.5 0 0 1 0 1H15v2a1 1 0 0 1 1 1v8.5a1.5 1.5 0 0 1-1.5 1.5h-12A2.5 2.5 0 0 1 0 12.5zm1 1.732V12.5A1.5 1.5 0 0 0 2.5 14h12a.5.5 0 0 0 .5-.5V5H2a2 2 0 0 1-1-.268M1 3a1 1 0 0 0 1 1h12V2H2a1 1 0 0 0-1 1"/>
+</svg>
+  </div>
+  </div>
+  <div class="col-xl-5 col-lg-5 col-md-3 col-sm-3">
+    <div class="mt-3 mx-2">
+      <h6 style="color: white;">Centered security dashboards</h6>
+    </div>
+  </div>
+  <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1">
+    <div>
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="pink" class="bi bi-shield-check bg-primary mt-3 p-2 rounded-circle" style="border: dashed;" viewBox="0 0 16 16">
+  <path d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56"/>
+  <path d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+</svg>
+    </div>
+  </div class="mt-3">
+  <div class="col-xl-5 col-lg-5 col-md-3 col-sm-3">
+    <div class="mt-3 mx-2">
+      <h6 style="color: white;">Behave based monitoring</h6>
+    </div>
+  </div>
+  </div><!--inmer row 2-->
+
+  <div class="row">
+  <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1">
+    <div>
+  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="pink" class="bi bi-lock bg-primary p-2 mt-3 rounded-circle" style="border: dashed;" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M8 0a4 4 0 0 1 4 4v2.05a2.5 2.5 0 0 1 2 2.45v5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5v-5a2.5 2.5 0 0 1 2-2.45V4a4 4 0 0 1 4-4M4.5 7A1.5 1.5 0 0 0 3 8.5v5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5v-5A1.5 1.5 0 0 0 11.5 7zM8 1a3 3 0 0 0-3 3v2h6V4a3 3 0 0 0-3-3"/>
+</svg>
+    </div>
+  </div>
+  <div class="col-xl-5 col-lg-5 col-md-3 col-sm-3">
+    <div class="mt-3 mx-2">
+      <h6 style="color: white;">Minimal resource footprint</h6>
+    </div>
+  </div>
+  <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1">
+  <div>
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="pink" class="bi bi-door-closed bg-primary p-2 mt-3 rounded-circle" style="border: dashed;" viewBox="0 0 16 16">
+  <path d="M3 2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v13h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3zm1 13h8V2H4z"/>
+  <path d="M9 9a1 1 0 1 0 2 0 1 1 0 0 0-2 0"/>
+</svg>
+  </div>
+  </div>
+  <div class="col-xl-5 col-lg-5 col-md-3 col-sm-3">
+    <div class="mt-3 mx-2">
+      <h6 style="color: white;">Automat incident response</h6>
+    </div>
+  </div>
+  </div><!--inner row 3-->
+
+  <div>
+    <div class="mt-3">
+      <a href=""><button class="btn btn-primary rounded-pill" type="button">Explore our advantages</button></a>
+    </div>
+  </div>
+</div><!--col-->
+
+<div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 overflow-hidden">
+  <div>
+    <img class="rop" src="https://templates.hibotheme.com/aixio/default/assets/img/about/wh-img-2.jpg" alt="" height="635px" width="700px">
+  </div>
+</div>
+</div><!--row-->
+</div><!--container-->
+</section>
+
+<section class="py-5">
+  <div class="container">
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+  <div class="text-center">
+    <button type="button" class="btn rounded-pill" style="background-color: greenyellow;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M8 0a4 4 0 0 1 4 4v2.05a2.5 2.5 0 0 1 2 2.45v5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5v-5a2.5 2.5 0 0 1 2-2.45V4a4 4 0 0 1 4-4M4.5 7A1.5 1.5 0 0 0 3 8.5v5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5v-5A1.5 1.5 0 0 0 11.5 7zM8 1a3 3 0 0 0-3 3v2h6V4a3 3 0 0 0-3-3"/>
+    </svg>&nbsp;&nbsp;<b>Aixio AI CyberSecurity Features</b></button>
+  </div>
+</div>
+
+<div>
+  <div class="text-center">
+    <p style="font-size: 54px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Zero trust access control for safer user authentication & access</p>
+  </div>
+</div>
+</section>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+      <div class="wrap">
+  <h1 class="pc">
+    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="blue" class="bi bi-pc-display p-3 rounded-3" style="border: dashed;" viewBox="0 0 16 16">
+      <path d="M8 1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1zm1 13.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0m2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0M9.5 1a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM9 3.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0-.5.5M1.5 2A1.5 1.5 0 0 0 0 3.5v7A1.5 1.5 0 0 0 1.5 12H6v2h-.5a.5.5 0 0 0 0 1H7v-4H1.5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5H7V2z"/>
+    </svg></h1>
+    <div class="overlaydone">
+<div class="com">
+  <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="white" class="bi bi-pc-display p-3" viewBox="0 0 16 16">
+  <path d="M8 1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1zm1 13.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0m2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0M9.5 1a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM9 3.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0-.5.5M1.5 2A1.5 1.5 0 0 0 0 3.5v7A1.5 1.5 0 0 0 1.5 12H6v2h-.5a.5.5 0 0 0 0 1H7v-4H1.5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5H7V2z"/>
+</svg>
+</div>
+</div>
+</div>
+</div><!--col-->
+
+
+<div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+  <div class="wrap1">
+    <h1 class="pc1">
+      <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="blue" class="bi bi-laptop p-3 rounded-3" style="border: dashed;" viewBox="0 0 16 16">
+        <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5"/>
+</svg></h1>
+<div class="overlaydone1">
+<div class="com1">
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="white" class="bi bi-laptop p-3" viewBox="0 0 16 16">
+  <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5"/>
+</svg>  
+</div>
+</div>
+</div>
+</div><!--col-->
+
+<div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+  <div class="wrap2">
+    <h1 class="pc2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="blue" class="bi bi-lock p-3 rounded-3" style="border: dashed;" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M8 0a4 4 0 0 1 4 4v2.05a2.5 2.5 0 0 1 2 2.45v5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5v-5a2.5 2.5 0 0 1 2-2.45V4a4 4 0 0 1 4-4M4.5 7A1.5 1.5 0 0 0 3 8.5v5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5v-5A1.5 1.5 0 0 0 11.5 7zM8 1a3 3 0 0 0-3 3v2h6V4a3 3 0 0 0-3-3"/>
+</svg></h1>
+<div class="overlaydone2">
+<div class="com2">
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="white" class="bi bi-lock p-3" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M8 0a4 4 0 0 1 4 4v2.05a2.5 2.5 0 0 1 2 2.45v5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5v-5a2.5 2.5 0 0 1 2-2.45V4a4 4 0 0 1 4-4M4.5 7A1.5 1.5 0 0 0 3 8.5v5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5v-5A1.5 1.5 0 0 0 11.5 7zM8 1a3 3 0 0 0-3 3v2h6V4a3 3 0 0 0-3-3"/>
+</svg>  
+</div>
+</div>
+</div>
+</div><!--col-->
+
+<div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+  <div class="wrap3">
+    <h1 class="pc3">
+      <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="blue" class="bi bi-postcard p-3 rounded-3" style="border: dashed;" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm7.5.5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0zM2 5.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5M10.5 5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zM13 8h-2V6h2z"/>
+</svg></h1>
+<div class="overlaydone3">
+<div class="com3">
+  <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="white" class="bi bi-postcard p-3" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm7.5.5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0zM2 5.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5M10.5 5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zM13 8h-2V6h2z"/>
+  </svg>  
+</div>
+</div>
+</div>
+</div><!--col-->
+</div><!--row-->
+
+<div class="continer py-5">
+  <div class="row">
+    <div class="col">
+  <div class="col-xl-8 col-lg-10 col-md-12 col-sm-12">
+    <div>
+      <h5><b>Real-Time Threat Detection</b></h5>
+    </div>
+  </div>
+  
+  <div class="col-xl-9 col-lg-11 col-md-12 col-sm-12">
+    <div>
+<p>Real-time scanning and pattern recognition to evolving in threats before</p>
+</div>
+</div>
+</div><!--col-->
+<div class="col">
+  <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
+<div>
+  <h5><b>Predictive Risk Analytics</b></h5>
+</div>
+  </div>
+  
+  <div class="col-xl-10 col-lg-12 col-md-12 col-sm-12">
+    <div>
+      <p>Automatically contain and neralize cyberattacks minimal human intervention</p>
+    </div>
+  </div>
+  </div><!--col-->
+
+  <div class="col">
+  <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
+<div>
+  <h5><b>Auto incident response</b></h5>
+</div>
+  </div>
+  
+  <div class="col-xl-10 col-lg-12 col-md-12 col-sm-12">
+    <div>
+      <p>Comprehensive protection for AWS azure Google cloud and & hybrid environments</p>
+    </div>
+  </div>
+  </div><!--col-->
+
+  <div class="col">
+  <div class="col-xl-8 col-lg-10 col-md-12 col-sm-12">
+<div>
+  <h5><b>Security analytics dashboard</b></h5>
+</div>
+  </div>
+  
+  <div class="col-xl-9 col-lg-11 col-md-12 col-sm-12">
+    <div>
+      <p>Centralized visibility into threats performance and metrics in real time</p>
+    </div>
+  </div>
+  </div><!--col-->
+
+</div><!--row-->
+</div><!--container-->
+<br><br><br><br>
+
+<div class="container">
+  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+      <div class="text-center">
+        <button type="button" class="btn rounded-pill" style="background-color: greenyellow;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 0a4 4 0 0 1 4 4v2.05a2.5 2.5 0 0 1 2 2.45v5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5v-5a2.5 2.5 0 0 1 2-2.45V4a4 4 0 0 1 4-4M4.5 7A1.5 1.5 0 0 0 3 8.5v5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5v-5A1.5 1.5 0 0 0 11.5 7zM8 1a3 3 0 0 0-3 3v2h6V4a3 3 0 0 0-3-3"/>
+        </svg>&nbsp;&nbsp;<b>Pricing plans</b></button>
+      </div>
+    </div>
+    
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+      <div class="text-center">
+        <p style="font-size: 50px;"><b>Flexible Cybersecurity Plans Tailored For Business Of All Sizes</b></p>
+      </div>
+    </div> 
+<div class="table-responsive-xl pb-6 pb-xl-0">
+<div class="flex-nowrap row">
+  
+<div class="col py-5 mt-5"> 
+
+  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mt-5">
+<div class="py-4">
+  <h5>Security</h5>
+</div>
+</div>
+
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+<div class="py-5">
+  <h5>Monitor</h5>
+</div>
+</div>
+
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+<div class="py-3">
+  <h5>Protection</h5>
+</div>
+</div>
+
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+<div class="py-4 mt-4">
+  <h5>Email</h5>
+</div>
+</div>
+
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+  <div class="py-4 mt-2">
+<h5>Threat</h5>
+  </div>
+</div>
+
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+<div class="py-4">
+  <h5>API</h5>
+</div>
+</div>
+
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+<div class="py-4">
+  <h5>Account</h5>
+</div>
+</div>
+</div>   
+<div class="col-xl-3 col-lg-4 col-md-12 col-sm-12 rounded-4" style="background-color: white;">
+<div class="text-center">
+<h5 class="text-secondary">Started</h5>
+</div>
+<div class="text-center">
+  <h6><span style="font-size: 50px;">30.00</span>/Per Month</h6>
+</div>
+<div class="text-center">
+  <h5 class="text-secondary">For Startups</h5>
+</div>
+<ul class="text-center mt-4 list-group list-group-flush">
+  <li class="list-group-item" style="list-style-type: none;"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="blue" class="bi bi-bookmark-check" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+</svg></li>
+  <li class="mt-5 list-group-item" style="list-style-type: none; font-size:20px; color: gray;">1 admin user</li>
+  <li class="mt-5 list-group-item" style="list-style-type: none;"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="blue" class="bi bi-bookmark-check" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+</svg></li>
+  <li class="mt-5 list-group-item" style="list-style-type: none;"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="blue" class="bi bi-bookmark-check" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+</svg></li>
+  <li class="mt-5 list-group-item" style="list-style-type: none;"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="blue" class="bi bi-bookmark-check" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+</svg></li>
+  <li class="mt-5 list-group-item" style="list-style-type: none;"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="red" class="bi bi-x-lg" viewBox="0 0 16 16">
+  <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+</svg></li>
+  <li class="mt-5 list-group-item" style="list-style-type: none;"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="red" class="bi bi-x-lg" viewBox="0 0 16 16">
+  <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+</svg></li>
+<li class="mt-4 list-group-item" style="list-style-type: none;">  
+<a href=""><button class="btn btn-info rounded-pill" type="button">
+  Get Started<span class="badge"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+  <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+</svg></span></button></a>
+</li>
+</ul>
+
+</div> 
+<div class="col-xl-3 col-lg-4 col-md-12 col-sm-12 rounded-4 mx-1" style="background-color: white;">
+<div class="text-center">
+<h5 class="text-secondary">Pro</h5>
+</div>
+<div class="text-center">
+  <h6><span style="font-size: 50px;">50.00</span>/Per Month</h6>
+</div>
+<div class="text-center">
+  <h5 class="text-secondary">For Pro</h5>
+</div>
+<ul class="text-center mt-4 list-group list-group-flush">
+  <li class="list-group-item" style="list-style-type: none;"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="blue" class="bi bi-bookmark-check" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+</svg></li>
+  <li class="mt-5 list-group-item" style="list-style-type: none; font-size:20px; color: gray;">4 admin user</li>
+  <li class="mt-5 list-group-item" style="list-style-type: none;"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="blue" class="bi bi-bookmark-check" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+</svg></li>
+  <li class="mt-5 list-group-item" style="list-style-type: none;"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="blue" class="bi bi-bookmark-check" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+</svg></li>
+  <li class="mt-5 list-group-item" style="list-style-type: none;"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="blue" class="bi bi-bookmark-check" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+</svg></li>
+  <li class="mt-5 list-group-item" style="list-style-type: none;"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="blue" class="bi bi-bookmark-check" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+</svg></li>
+  <li class="mt-5 list-group-item" style="list-style-type: none;"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="red" class="bi bi-x-lg" viewBox="0 0 16 16">
+  <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+</svg></li>
+<li class="mt-4 list-group-item" style="list-style-type: none;">  
+<a href=""><button class="btn btn-info rounded-pill" type="button">
+  Get Started<span class="badge"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+  <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+</svg></span></button></a>
+</li>
+</ul>
+
+</div>
+<div class="col-xl-3 col-lg-4 col-md-12 col-sm-12 rounded-4" style="background-color: white;">
+<div class="text-center">
+<h5 class="text-secondary">Business</h5>
+</div>
+<div class="text-center">
+  <h6><span style="font-size: 50px;">70.00</span>/Per Month</h6>
+</div>
+<div class="text-center">
+  <h5 class="text-secondary">For Business</h5>
+</div>
+<ul class="text-center mt-4 list-group list-group-flush">
+  <li class="list-group-item" style="list-style-type: none;"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="blue" class="bi bi-bookmark-check" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+</svg></li>
+  <li class="mt-5 list-group-item" style="list-style-type: none; font-size:20px; color: gray;">10 admin user</li>
+  <li class="mt-5 list-group-item" style="list-style-type: none;"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="blue" class="bi bi-bookmark-check" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+</svg></li>
+  <li class="mt-5 list-group-item" style="list-style-type: none;"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="blue" class="bi bi-bookmark-check" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+</svg></li>
+  <li class="mt-5 list-group-item" style="list-style-type: none;"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="blue" class="bi bi-bookmark-check" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+</svg></li>
+  <li class="mt-5 list-group-item" style="list-style-type: none;"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="blue" class="bi bi-bookmark-check" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+</svg></li>
+  <li class="mt-5 list-group-item" style="list-style-type: none;"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="blue" class="bi bi-bookmark-check" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+</svg></li>
+<li class="mt-4 list-group-item" style="list-style-type: none;">  
+<a href=""><button class="btn btn-info rounded-pill" type="button">
+  Get Started<span class="badge"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+  <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+</svg></span></button></a>
+</li>
+</ul>
+
+</div> 
+
+</div>
+</div><!--table-->
+</div><!--container-->
+
+
+<!-- <section class="py-5 bg-light rounded-4">
+  <div class="container-fluid">
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+      <div>
+        <button type="button" class="btn rounded-pill" style="background-color: greenyellow;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 0a4 4 0 0 1 4 4v2.05a2.5 2.5 0 0 1 2 2.45v5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5v-5a2.5 2.5 0 0 1 2-2.45V4a4 4 0 0 1 4-4M4.5 7A1.5 1.5 0 0 0 3 8.5v5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5v-5A1.5 1.5 0 0 0 11.5 7zM8 1a3 3 0 0 0-3 3v2h6V4a3 3 0 0 0-3-3"/>
+        </svg>&nbsp;&nbsp;<b>Pricing plans</b></button>
+      </div>
+    </div>
+    
+    <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12">
+      <div>
+        <p style="font-size: 50px;"><b>Flexible Cybersecurity Plans Tailored For Business Of All Sizes</b></p>
+      </div>
+    </div>
+    <div class="row">
+     <div class="col py-5 mt-5"> 
+
+  <div class="col-xl-8 col-lg-3 col-md-12 col-sm-12 mt-5">
+<div class="py-4">
+  <h5>Weekly security</h5>
+</div>
+</div>
+
+<div class="col-xl-8 col-lg-10 col-md-12 col-sm-12">
+<div class="py-5">
+  <h5>Threat monitor</h5>
+</div>
+</div>
+
+<div class="col-xl-8 col-lg-10 col-md-12 col-sm-12">
+<div class="py-3">
+  <h5>Cloud protection</h5>
+</div>
+</div>
+
+<div class="col-xl-8 col-lg-10 col-md-12 col-sm-12">
+<div class="py-4 mt-4">
+  <h5>Email support</h5>
+</div>
+</div>
+
+<div class="col-xl-8 col-lg-10 col-md-12 col-sm-12">
+  <div class="py-4 mt-2">
+<h5>Threat monitor</h5>
+  </div>
+</div>
+
+<div class="col-xl-8 col-lg-10 col-md-12 col-sm-12">
+<div class="py-4">
+  <h5>API Access</h5>
+</div>
+</div>
+
+<div class="col-xl-8 col-lg-10 col-md-12 col-sm-12">
+<div class="py-4">
+  <h5>Account manage</h5>
+</div>
+</div>
+</div>
+
+
+<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 rounded-4" style="background-color: white;">
+<div class="text-center">
+<h5 class="text-secondary">Started</h5>
+</div>
+<div class="text-center">
+  <h6><span style="font-size: 50px;">30.00</span>/Per Month</h6>
+</div>
+<div class="text-center">
+  <h5 class="text-secondary">For Startups</h5>
+</div>
+<ul class="text-center mt-4 list-group list-group-flush">
+  <li class="list-group-item" style="list-style-type: none;"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="blue" class="bi bi-bookmark-check" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+</svg></li>
+  <li class="mt-5 list-group-item" style="list-style-type: none; font-size:20px; color: gray;">1 admin user</li>
+  <li class="mt-5 list-group-item" style="list-style-type: none;"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="blue" class="bi bi-bookmark-check" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+</svg></li>
+  <li class="mt-5 list-group-item" style="list-style-type: none;"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="blue" class="bi bi-bookmark-check" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+</svg></li>
+  <li class="mt-5 list-group-item" style="list-style-type: none;"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="blue" class="bi bi-bookmark-check" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+</svg></li>
+  <li class="mt-5 list-group-item" style="list-style-type: none;"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="red" class="bi bi-x-lg" viewBox="0 0 16 16">
+  <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+</svg></li>
+  <li class="mt-5 list-group-item" style="list-style-type: none;"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="red" class="bi bi-x-lg" viewBox="0 0 16 16">
+  <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+</svg></li>
+<li class="mt-4 list-group-item" style="list-style-type: none;">  
+<a href=""><button class="btn btn-info rounded-pill" type="button">
+  Get Started<span class="badge"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+  <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+</svg></span></button></a>
+</li>
+</ul>
+
+</div>
+
+<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 rounded-4 mx-1" style="background-color: white;">
+<div class="text-center">
+<h5 class="text-secondary">Pro</h5>
+</div>
+<div class="text-center">
+  <h6><span style="font-size: 50px;">50.00</span>/Per Month</h6>
+</div>
+<div class="text-center">
+  <h5 class="text-secondary">For Pro</h5>
+</div>
+<ul class="text-center mt-4 list-group list-group-flush">
+  <li class="list-group-item" style="list-style-type: none;"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="blue" class="bi bi-bookmark-check" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+</svg></li>
+  <li class="mt-5 list-group-item" style="list-style-type: none; font-size:20px; color: gray;">4 admin user</li>
+  <li class="mt-5 list-group-item" style="list-style-type: none;"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="blue" class="bi bi-bookmark-check" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+</svg></li>
+  <li class="mt-5 list-group-item" style="list-style-type: none;"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="blue" class="bi bi-bookmark-check" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+</svg></li>
+  <li class="mt-5 list-group-item" style="list-style-type: none;"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="blue" class="bi bi-bookmark-check" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+</svg></li>
+  <li class="mt-5 list-group-item" style="list-style-type: none;"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="blue" class="bi bi-bookmark-check" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+</svg></li>
+  <li class="mt-5 list-group-item" style="list-style-type: none;"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="red" class="bi bi-x-lg" viewBox="0 0 16 16">
+  <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+</svg></li>
+<li class="mt-4 list-group-item" style="list-style-type: none;">  
+<a href=""><button class="btn btn-info rounded-pill" type="button">
+  Get Started<span class="badge"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+  <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+</svg></span></button></a>
+</li>
+</ul>
+
+</div>
+
+<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 rounded-4" style="background-color: white;">
+<div class="text-center">
+<h5 class="text-secondary">Business</h5>
+</div>
+<div class="text-center">
+  <h6><span style="font-size: 50px;">70.00</span>/Per Month</h6>
+</div>
+<div class="text-center">
+  <h5 class="text-secondary">For Business</h5>
+</div>
+<ul class="text-center mt-4 list-group list-group-flush">
+  <li class="list-group-item" style="list-style-type: none;"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="blue" class="bi bi-bookmark-check" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+</svg></li>
+  <li class="mt-5 list-group-item" style="list-style-type: none; font-size:20px; color: gray;">10 admin user</li>
+  <li class="mt-5 list-group-item" style="list-style-type: none;"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="blue" class="bi bi-bookmark-check" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+</svg></li>
+  <li class="mt-5 list-group-item" style="list-style-type: none;"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="blue" class="bi bi-bookmark-check" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+</svg></li>
+  <li class="mt-5 list-group-item" style="list-style-type: none;"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="blue" class="bi bi-bookmark-check" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+</svg></li>
+  <li class="mt-5 list-group-item" style="list-style-type: none;"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="blue" class="bi bi-bookmark-check" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+</svg></li>
+  <li class="mt-5 list-group-item" style="list-style-type: none;"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="blue" class="bi bi-bookmark-check" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+</svg></li>
+<li class="mt-4 list-group-item" style="list-style-type: none;">  
+<a href=""><button class="btn btn-info rounded-pill" type="button">
+  Get Started<span class="badge"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+  <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+</svg></span></button></a>
+</li>
+</ul>
+
+</div> -->
+
+<!-- </div> -->
+<!--row-->
+<!-- </div> -->
+<!--container-->
+<!-- </section> -->
+
+<section class="py-5 overflow-hidden">
+<div class="container">
+<div class="row">
+  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+    <div class="text-center my-3">
+    <button type="button" class="btn rounded-pill" style="background-color: greenyellow;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 0a4 4 0 0 1 4 4v2.05a2.5 2.5 0 0 1 2 2.45v5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5v-5a2.5 2.5 0 0 1 2-2.45V4a4 4 0 0 1 4-4M4.5 7A1.5 1.5 0 0 0 3 8.5v5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5v-5A1.5 1.5 0 0 0 11.5 7zM8 1a3 3 0 0 0-3 3v2h6V4a3 3 0 0 0-3-3"/>
+        </svg>&nbsp;&nbsp;<b>Platforms that we serve</b></button>
+    </div>
+  </div>
+<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+ <div class="myimage">
+<img src="https://templates.hibotheme.com/aixio/default/assets/img/about/platform-1.jpg" alt="" width="500px">
+ </div>
+</div>
+
+<div class="col">
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+  <div>
+    <p style="font-size: 40px;"><b>Comprehensive protection for Cloud, Hybrid and On-premise system</b></p>
+  </div>
+</div>
+
+<div class="col-xl-12 col-lg-5 col-md-12 col-sm-12">
+  <div>
+  <p>Whether you are operating on Cloud, on-premise, or in hybrid environments, our AI driven cybersecurity solution ensure consistency, Real-Time protection</p>
+  </div>
+</div>
+
+<div class="col-xl-12 col-md-12 col-lg-12 col-sm-12">
+<div class="smith" onclick="toggleDropdown()">
+  <div class="smith1">
+    <div class="icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="blue" class="bi bi-bank p-1 rounded-circle mx-2" style="background-color: white;" viewBox="0 0 16 16">
+  <path d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485.62H.5a.498.498 0 0 1-.485-.62l.5-2A.5.5 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89zM3.777 3h8.447L8 1zM2 6v7h1V6zm2 0v7h2.5V6zm3.5 0v7h1V6zm2 0v7H12V6zM13 6v7h1V6zm2-1V4H1v1zm-.39 9H1.39l-.25 1h13.72z"/>
+</svg><strong style="font-size: 20px;">Banks & Financial</strong>
+    </div>
+    <div class="dropbtn">▼</div>
+  </div>
+  <div id="dropdown" class="dropdown-content">
+   <p style="font-size: 20px;">We support a wide range of platforms including AWS, Azure, Google Cloud, Linux, Windows, macOS, and mobile operating systems.</p> 
+  </div>
+</div>
+
+<script>
+  function toggleDropdown() {
+    const dropdown = document.getElementById('dropdown');
+    dropdown.classList.toggle('active');
+  }
+</script>
+
+</div>
+
+<div class="col-xl-12 col-md-12 col-lg-12 col-sm-12">
+<div class="smith2" onclick="toggleDropdown1()">
+  <div class="smith3">
+    <div class="icon1">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="blue" class="bi bi-cloud p-1 mx-2" style="border-radius:50%; background-color: white;" viewBox="0 0 16 16">
+  <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+</svg><strong style="font-size: 20px;">Hybrid & Multi-cloud systems</strong>
+    </div>
+    <div class="dropbtn">▼</div>
+  </div>
+  <div id="dropdown1" class="dropdown-content1">
+   <p style="font-size: 20px;">We support a wide range of platforms including AWS, Azure, Google Cloud, Linux, Windows, macOS, and mobile operating systems.</p> 
+  </div>
+</div>
+
+<script>
+  function toggleDropdown1() {
+    const dropdown = document.getElementById('dropdown1');
+    dropdown.classList.toggle('active');
+  }
+</script>
+
+</div>
+
+<div class="col-xl-12 col-md-12 col-lg-12 col-sm-12">
+<div class="smith4" onclick="toggleDropdown2()">
+  <div class="smith5">
+    <div class="icon2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="blue" class="bi bi-laptop p-1 mx-2" style="background-color: white; border-radius:50%;" viewBox="0 0 16 16">
+  <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5"/>
+</svg><strong style="font-size: 20px;">Decops & CI/CD pipelines</strong>
+    </div>
+    <div class="dropbtn">▼</div>
+  </div>
+  <div id="dropdown2" class="dropdown-content2">
+   <p style="font-size: 20px;">We support a wide range of platforms including AWS, Azure, Google Cloud, Linux, Windows, macOS, and mobile operating systems.</p> 
+  </div>
+</div>
+
+<script>
+  function toggleDropdown2() {
+    const dropdown = document.getElementById('dropdown2');
+    dropdown.classList.toggle('active');
+  }
+</script>
+
+</div>
+
+<div class="col-xl-12 col-md-12 col-lg-12 col-sm-12">
+<div class="smith6" onclick="toggleDropdown3()">
+  <div class="smith7">
+    <div class="icon3">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="blue" class="bi bi-calendar4-event p-1 mx-2" style="border-radius:50%; background-color: white;" viewBox="0 0 16 16">
+  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
+  <path d="M11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z"/>
+</svg><strong style="font-size: 20px;">Endpoints and mobile devices</strong>
+    </div>
+    <div class="dropbtn">▼</div>
+  </div>
+  <div id="dropdown3" class="dropdown-content3">
+   <p style="font-size: 20px;">We recommend servicing your HVAC system at least once a year — ideally in the spring for air conditioning and in the fall for heating. Regular maintenance helps improve efficiency, reduce energy bills, and extend the life of your system.</p> 
+  </div>
+</div>
+
+<script>
+  function toggleDropdown3() {
+    const dropdown = document.getElementById('dropdown3');
+    dropdown.classList.toggle('active');
+  }
+</script>
+
+</div>
+
+</div><!--col-->
+</div><!--row-->
+</div><!--container-->
+</section><br><br><br>
+
+<div class="container overflow-hidden">
+  
+  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+    <div class="mt-5 py-5" style="position: absolute;">
+      <button type="button" class="btn rounded-pill" style="background-color: greenyellow;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M8 0a4 4 0 0 1 4 4v2.05a2.5 2.5 0 0 1 2 2.45v5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5v-5a2.5 2.5 0 0 1 2-2.45V4a4 4 0 0 1 4-4M4.5 7A1.5 1.5 0 0 0 3 8.5v5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5v-5A1.5 1.5 0 0 0 11.5 7zM8 1a3 3 0 0 0-3 3v2h6V4a3 3 0 0 0-3-3"/>
+      </svg>&nbsp;&nbsp;<b>Call to action</b></button>
+      <p style="font-size: 40px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"><b>Ready To Experience AI-Powered Cybersecurity That Works</b></p>
+    </div>
+  </div>
+  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+  <div>
+    <img src="https://templates.hibotheme.com/aixio/default/assets/img/cta-bg-1.jpg" alt="" width="1300">
+  </div>
+  </div>
+</div><br><br><br>
+
+<div class="container py-5 overflow-hidden">
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+  <div class="text-center">
+    <button type="button" class="btn rounded-pill" style="background-color: greenyellow;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M8 0a4 4 0 0 1 4 4v2.05a2.5 2.5 0 0 1 2 2.45v5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5v-5a2.5 2.5 0 0 1 2-2.45V4a4 4 0 0 1 4-4M4.5 7A1.5 1.5 0 0 0 3 8.5v5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5v-5A1.5 1.5 0 0 0 11.5 7zM8 1a3 3 0 0 0-3 3v2h6V4a3 3 0 0 0-3-3"/>
+      </svg>&nbsp;&nbsp;<b>Blog & News</b></button>
+  </div>
+</div>
+
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+  <div class="text-center">
+ <p style="font-size: 50px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"><b>Experts Tips And Trends In Cloud Security</b></p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col">
+
+<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+  <div>
+    <img class="rounded-4" src="https://templates.hibotheme.com/aixio/default/assets/img/blog/blog-4.jpg" alt="" height="250px" width="350px">
+  </div>
+</div>
+
+<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+  <div class="mt-2">
+    <h6>By Admin | 17 Aug,2025</h6>
+  </div>
+</div>
+
+<div class="col-xl-8 col-lg-8 col-md-6 col-sm-12">
+  <div>
+    <a href="" class="read1" style="font-size: 22px; text-decoration: none;"><b>How AI is revolutionizing Build Cybersecurity Defense Systems</b></a>
+  </div>
+</div>
+
+<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+  <div>
+    <a href="" class="read" style="text-decoration: none;"><b>Read More</b><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right mx-2" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+</svg></a>
+  </div>
+</div><br><br><br>
+
+</div><!--col-->
+
+<div class="col">
+
+  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+    <div>
+      <img src="https://templates.hibotheme.com/aixio/default/assets/img/blog/blog-5.jpg" alt="" height="250px" width="350px" class="rounded-4">
+    </div>
+  </div>
+
+  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+  <div class="mt-2">
+    <h6>By Admin | 09 Aug,2025</h6>
+  </div>
+</div>
+
+<div class="col-xl-9 col-lg-9 col-md-6 col-sm-12">
+  <div>
+    <a href="" class="read1" style="font-size: 22px; text-decoration: none;"><b>Top 10 Cybersecurity Threats Every Business Should Watch In 2025</b></a>
+  </div>
+</div>
+
+<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+  <div>
+    <a href="" class="read" style="text-decoration: none;"><b>Read More</b><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right mx-2" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+</svg></a>
+  </div>
+</div>
+
+</div><!--col-->
+
+<div class="col">
+
+  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+    <div>
+      <img src="https://templates.hibotheme.com/aixio/default/assets/img/blog/blog-6.jpg" alt="" height="250px" width="350px" class="rounded-4">
+    </div>
+  </div>
+
+  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+  <div class="mt-2">
+    <h6>By Admin | 12 Aug,2025</h6>
+  </div>
+</div>
+
+<div class="col-xl-9 col-lg-9 col-md-6 col-sm-12">
+  <div>
+    <a href="" class="read1" style="font-size: 22px; text-decoration: none;"><b>Cloud Security Best Practices For Multi-Platform Environments</b></a>
+  </div>
+</div>
+
+<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+  <div>
+    <a href="" class="read" style="text-decoration: none;"><b>Read More</b><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right mx-2" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+</svg></a>
+  </div>
+</div>
+
+</div><!--col-->
+
+<div class="col">
+
+  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+    <div>
+      <img src="https://templates.hibotheme.com/aixio/default/assets/img/blog/blog-7.jpg" alt="" height="250px" width="350px" class="rounded-4">
+    </div>
+  </div>
+
+  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+  <div class="mt-2">
+    <h6>By Admin | 12 Aug,2025</h6>
+  </div>
+</div>
+
+<div class="col-xl-9 col-lg-9 col-md-6 col-sm-12">
+  <div>
+    <a href="" class="read1" style="font-size: 22px; text-decoration: none;"><b>The Benefits Of Zero Trust Architecture For Modern Enterprises</b></a>
+  </div>
+</div>
+
+<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+  <div>
+    <a href="" class="read" style="text-decoration: none;"><b>Read More</b><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right mx-2" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+</svg></a>
+  </div>
+</div>
+
+</div><!--col-->
+
+</div><!--row-->
+</div><!--container-->
+<br><br><br>
+<section class="mt-5">
+ <div class="container bg-dark rounded-5">
+<div class="row">
+<div class="col-xl-2 col-lg-3 col-md-6 col-sm-12">
+  <div class="mt-5">
+    <a href="#" style="text-decoration: none;"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="greenyellow" class="bi bi-airplane mb-2" viewBox="0 0 16 16">
+  <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849m.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1s-.458.158-.678.599"/>
+</svg>&nbsp;&nbsp;<span style="font-size: 35px; color: white;"><b>ISI</b></span></a>
+  </div>
+</div>
+
+<div class="col">
+<div class="col-xl-6 col-lg-5 col-md-6 col-sm-12">
+  <div class="mt-5 py-2">
+    <h4 style="color: white;"><b>Quick Links</b></h4>
+  </div>
+</div>
+
+<div class="col-xl-2 col-lg-2 col-md-3 col-sm-12">
+  <div class="py-2">
+    <a class="foot" href="" style="color: white; text-decoration: none;">Features</a>
+  </div>
+</div>
+
+<div class="col-xl-2 col-lg-2 col-md-3 col-sm-12">
+  <div class="py-2">
+    <a class="foot" href="" style="color: white; text-decoration: none;">About</a>
+  </div>
+</div>
+
+<div class="col-xl-2 col-lg-2 col-md-3 col-sm-12">
+  <div class="py-2">
+    <a class="foot" href="" style="color: white; text-decoration: none;">Testimonials</a>
+  </div>
+</div>
+
+<div class="col-xl-2 col-lg-2 col-md-3 col-sm-12">
+  <div class="py-2">
+    <a class="foot" href="" style="color: white; text-decoration: none;">Pricing</a>
+  </div>
+</div>
+
+<div class="col-xl-2 col-lg-2 col-md-3 col-sm-12">
+  <div class="py-2">
+    <a class="foot" href="" style="color: white; text-decoration: none;">Blog</a>
+  </div>
+</div>
+
+</div><!--col-->
+
+<div class="col">
+<div class="col-xl-1 col-lg-3 col-md-6 col-sm-12">
+  <div class="mt-5 py-2">
+    <h4 style="color: white;"><b>Address</b></h4>
+  </div>
+</div>
+
+<div class="col-xl-9 col-lg-7 col-md-6 col-sm-12">
+  <div>
+<h5 style="color: white;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="greenyellow" class="bi bi-geo-alt mx-1" viewBox="0 0 16 16">
+  <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+  <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+</svg>Address: <span style="color: rgb(109, 102, 102); font-size: 15px;">Chak No.66 J.B <br>Dhandra Faisalabad, PAK</span></h5>
+  </div>
+</div>
+
+<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+  <div>
+    <h5 style="color: white;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="greenyellow" class="bi bi-envelope mx-2" viewBox="0 0 16 16">
+  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+</svg>Email: <br><span style="color: rgb(109, 104, 104); font-size:15px;">contact@ISIgmail.com</span></h5>
+  </div>
+</div>
+
+<div class="col-xl-5 col-lg-4 col-md-6 col-sm-12">
+  <div>
+   <h5 style="color: white;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="greenyellow" class="bi bi-telephone-plus mx-2" viewBox="0 0 16 16">
+  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+  <path fill-rule="evenodd" d="M12.5 1a.5.5 0 0 1 .5.5V3h1.5a.5.5 0 0 1 0 1H13v1.5a.5.5 0 0 1-1 0V4h-1.5a.5.5 0 0 1 0-1H12V1.5a.5.5 0 0 1 .5-.5"/>
+</svg>Phone: <br> <span style="color: rgb(109, 103, 103); font-size: 15px;">+92 300 3476298</span></h5>
+  </div>
+</div>
+
+</div><!--col-->
+
+<div class="col">
+
+<div class="col-xl-12 col-lg-10 col-md-9 col-sm-12">
+  <div class="mt-5 py-5">
+    <h5 style="color: white;"><b>Subscribe To Our Newsletter</b></h5>
+  </div>
+</div>
+
+<div class="col-xl-8 col-lg-7 col-md-9 col-sm-12">
+  <div class="input-group" style="width: 300px;">
+   <input type="text" class="form-control" placeholder="Enter Your Email"> <span class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green" class="bi bi-send-arrow-up" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M15.854.146a.5.5 0 0 1 .11.54l-2.8 7a.5.5 0 1 1-.928-.372l1.895-4.738-7.494 7.494 1.376 2.162a.5.5 0 1 1-.844.537l-1.531-2.407L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM5.93 9.363l7.494-7.494L1.591 6.602z"/>
+  <path fill-rule="evenodd" d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-5.354a.5.5 0 0 0-.722.016l-1.149 1.25a.5.5 0 1 0 .737.676l.28-.305V14a.5.5 0 0 0 1 0v-1.793l.396.397a.5.5 0 0 0 .708-.708z"/>
+</svg></span>
+  </div>
+</div>
+
+</div><!--col-->
+
+</div><!--row-->
+
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+  <div class="text-center mt-5 py-5">
+    <a href=""><button class="btn btn-info rounded-pill" type="button">&#169;
+  ISI Is Proudly Owned By ALI AHSAN<span class="badge"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+  <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+</svg></span></button></a>
+  </div>
+</div>
+ </div><!--container-->
+</section>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <section>
+<div class="container">
+<div class="row">
+<div class="col-xl-3 col-lg-3 col-md-4 col-sm-12">
+  <div class="air">
+<img src="https://templates.hibotheme.com/aixio/default/assets/img/icons/quote-pink.svg" alt="" class="position-absolute">
+<img src="https://templates.hibotheme.com/aixio/default/assets/img/trusted-client-white.png" alt="">
+<svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="hotpink" class="bi bi-life-preserver position-absolute" style="margin-top: 80px; margin-left: 75px;" viewBox="0 0 16 16">
+  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m6.43-5.228a7.03 7.03 0 0 1-3.658 3.658l-1.115-2.788a4 4 0 0 0 1.985-1.985zM5.228 14.43a7.03 7.03 0 0 1-3.658-3.658l2.788-1.115a4 4 0 0 0 1.985 1.985zm9.202-9.202-2.788 1.115a4 4 0 0 0-1.985-1.985l1.115-2.788a7.03 7.03 0 0 1 3.658 3.658m-8.087-.87a4 4 0 0 0-1.985 1.985L1.57 5.228A7.03 7.03 0 0 1 5.228 1.57zM8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+</svg>
+<img src="data:image/png;base64,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" alt="">
+</div>
+</div>
+<div class="col-xl-9 col-lg-9 col-md-8 col-sm-12">
+  <div class="air2">
+  <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 45px;">“We’ve used several cybersecurity 
+    platforms, but none match Aixio’s AI precision and speed. Their automated response prevented a major data breach, and the compliance
+     tools made our audits effortless.” </p>
+    </div>
+    </div>
+    <hr>
+
+  </div>
+</div>
+</section> -->
+<!-- 
+<div class="container">
+  <div class="row">
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+  <h2 class="air6">Users of Aixios</h2>
+  <img src="https://templates.hibotheme.com/aixio/default/assets/img/clients/client-1.jpg" alt="" class="air3">
+  <h3>Micheal Reyes</h3>
+  <p>CISO,Datatrust Corp</p>
+  <img src="https://templates.hibotheme.com/aixio/default/assets/img/clients/client-2.jpg" alt="" class="air4">
+  <h3>Tony Conor</h3>
+  <p>Entreprenuer</p>
+  <img src="https://templates.hibotheme.com/aixio/default/assets/img/clients/client-3.jpg" alt="" class="air5">
+  <h3>Andrew Higins</h3>
+  <p>Founder & CEO,BIMST</p>
+</div>
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+  <img src="" alt="" class="air7">
+  <h3></h3>
+  <p></p>
+</div>
+</div>
+
+</div> -->
+
+
+<!-- my name is ali -->
+
+  <!-- <section class="py-5 overflow-hidden" style="background-color: gainsboro;">
+  <div class="container-fluid">
+  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mx-auto" style="max-width: 200px;">
+  <button type="button" class="btn rounded-pill" style="background-color: greenyellow;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M8 0a4 4 0 0 1 4 4v2.05a2.5 2.5 0 0 1 2 2.45v5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5v-5a2.5 2.5 0 0 1 2-2.45V4a4 4 0 0 1 4-4M4.5 7A1.5 1.5 0 0 0 3 8.5v5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5v-5A1.5 1.5 0 0 0 11.5 7zM8 1a3 3 0 0 0-3 3v2h6V4a3 3 0 0 0-3-3"/>
+  </svg>&nbsp;&nbsp;<b>Data Security</b></button>
+  </div>
+  
+  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mx-auto" style="max-width: 700px;">
+    <p class="para"><b>Secure Your Data With Zero Trust Architecture And Controls</b></p>
+  </div>
+  
+  <div class="row">
+  <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+  <img src="https://templates.hibotheme.com/aixio/default/assets/img/about/data-bg.jpg" alt="" class="root" height="380px" width="270px">
+  <img src="https://templates.hibotheme.com/aixio/default/assets/img/about/ai-logo.png" alt="" class="root1">
+  </div>
+  
+  <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+  <img src="https://templates.hibotheme.com/aixio/default/assets/img/about/ai-img-1.jpg" alt="" class="root2" height="380px" width="270px">
+  </div>
+  
+  <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+  <div class="rounded-4 bg-info" style="height: 198px; width: 270px; margin-left: 40px;">
+  
+    <div class="root3">
+  <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" fill="white" class="bi bi-shield-lock bg-secondary rounded-circle p-2" viewBox="0 0 16 16">
+    <path d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56"/>
+    <path d="M9.5 6.5a1.5 1.5 0 0 1-1 1.415l.385 1.99a.5.5 0 0 1-.491.595h-.788a.5.5 0 0 1-.49-.595l.384-1.99a1.5 1.5 0 1 1 2-1.415"/>
+  </svg>
+  <span style="font-size: 40px; color: white;"><b>100%</b></span>
+  </div>
+  <div>
+    <h5 class="mx-4 mt-2" style="color: white;"><b>Security Guarantee</b></h5>
+    <p class="mx-4" style="color:antiquewhite;">AI Encryption Keeps Your Data <br>Safe</p>
+  </div>
+  </div>rounded
+  </div>col
+  
+  <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mt-3">
+  <div class="col rounded-4 bg-light" style="height: 198px; width: 270px; margin-left: 40px;">
+  <div class="root4">
+    <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" fill="lightblue" class="bi bi-shield-lock bg-secondary rounded-circle p-2 mx-4" viewBox="0 0 16 16">
+    <path d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56"/>
+    <path d="M9.5 6.5a1.5 1.5 0 0 1-1 1.415l.385 1.99a.5.5 0 0 1-.491.595h-.788a.5.5 0 0 1-.49-.595l.384-1.99a1.5 1.5 0 1 1 2-1.415"/>
+  </svg>
+  <span style="font-size: 40px;"><b>24/7</b></span>
+  </div>
+  <div>
+    <h5 class="mx-4 mt-2"><b>Real-Time monitoring</b></h5>
+    <p class="mx-4">Track Activity and Get Security analytics 24/7</p>
+  </div>
+  </div>inner col
+  </div>main
+  </div>columns
+  
+  <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+    <div class="root5">
+    <img src="https://templates.hibotheme.com/aixio/default/assets/img/about/data-card-bg-2.jpg" alt="" height="410px" width="270px" style="margin-left: -20px; border-radius: 5%;">
+    <h5 class="root6" style="text-align: center; max-width: 160px; margin-top: -160px; color: white;"><b>Military-Grade Encryption</b></h5>
+    <p class="root7" style="color: antiquewhite; text-align: center; max-width: 160px;"><b>advanced encryption protocols to ensure your sensitive</b></p>
+    </div>
+  </div>
+  
+  </div>row
+  </div>container
+  </section> -->
